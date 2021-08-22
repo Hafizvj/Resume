@@ -17,8 +17,19 @@
 
     $(document).ready(function () {
         $("#container").flipBook({
-            pdfUrl:"pdf/marcelline.pdf",
-        });
+            pages:[
+            {src:"images/book2/1.jpg", thumb:"images/book2/1.jpg", title:"Cover"},
+            {src:"images/book2/2.jpg", thumb:"images/book2/2.jpg", title:"Page two"},
+            {src:"images/book2/3.jpg", thumb:"images/book2/3.jpg", title:"Page three"},
+            {src:"images/book2/4.jpg", thumb:"images/book2/4.jpg", title:"Page four"},
+            {src:"images/book2/5.jpg", thumb:"images/book2/5.jpg", title:"Page five"},
+            {src:"images/book2/6.jpg", thumb:"images/book2/6.jpg", title:"Page six"},
+            {src:"images/book2/7.jpg", thumb:"images/book2/7.jpg", title:"Page seven"},
+            {src:"images/book2/8.jpg", thumb:"images/book2/8.jpg", title:"Page eight"},
+            {src:"images/book2/9.jpg", thumb:"images/book2/9.jpg", title:"Page nine"},
+            {src:"images/book2/10.jpg", thumb:"images/book2/10.jpg", title:"Last"}
+        ],
+            });
 
     })
 </script>
