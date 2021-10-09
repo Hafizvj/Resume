@@ -4,6 +4,29 @@
   var is_resize = false;
   var myscroll, myresize;
 
+  $(document).ready(function() {
+    $('.logo-carousel').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      arrows: true,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 2
+        }
+      }]
+    });
+  });
+
   //Run function when document ready
   $(document).ready(function() {
     init_full_height();
