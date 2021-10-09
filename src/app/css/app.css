@@ -5,8 +5,8 @@
 
 .logo-carousel {
   overflow: inherit;
-  border-top: 1px solid #353535;
-  border-bottom: 1px solid #353535;
+  border-top: 0px solid #353535;
+  border-bottom: 0px solid #353535;
 }
 
 /* Slider */
@@ -16,8 +16,8 @@
 
 .logo-carousel {
   overflow: inherit;
-  border-top: 1px solid #353535;
-  border-bottom: 1px solid #353535;
+  border-top: 0px solid #353535;
+  border-bottom: 0px solid #353535;
 }
 
 .slick-slide img {
@@ -94,7 +94,7 @@ body {
 
 /* JsFiddle Example only/don't use */
 .logo-carousel {
-  margin-top: 32px;
+  /* margin-top: 32px;*/
 }
 /* ----------------------------------------------------------------
 [Table of contents]
