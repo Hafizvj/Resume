@@ -23,6 +23,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- Slick Slider JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -1826,7 +1827,7 @@
               </h2>
               <p class="uk-text-bold">Feel free to contact me</p>
               <div id="contact-form-alert"></div>
-              <form id="contact-form" class="uk-form-stacked">
+              <form id="submit-form" method="" action="" class="uk-form-stacked">
                 <div class="uk-grid uk-grid-small uk-child-width-1-2@s">
                   <div>
                     <div class="uk-margin">
@@ -1932,6 +1933,25 @@
   <!-- js -->
   <script src="src/app/js/plugins.min.js"></script>
   <script src="src/app/js/app.js"></script>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxpj8nEs0XhrOeNECfRf9EV64yLYYDwC53Sfm5lfA/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </body>
 
 </html>
