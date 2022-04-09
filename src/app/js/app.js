@@ -3222,7 +3222,7 @@
     var $typed = $("#typed");
     if ($typed.length) {
       var typed = new Typed("#typed", {
-        strings: ["developer", "freelancer", "ui/ux designer", "digital marketer", "graphic designer"],
+        strings: ["ui/ux designer", "web designer", "web developer", "graphic designer", "freelancer"],
         loop: true,
         typeSpeed: 70
       });
