@@ -2323,13 +2323,38 @@ My hours are spent as a UI/UX designer but in my spare time, I like to go Joggin
               </h2>
               <p class="uk-text-bold">Feel free to contact me</p>
               <div id="contact-form-alert"></div>
-              <form id="submit-form" method="" action="" class="uk-form-stacked">
+              <form id="submit-form" action="https://formsubmit.co/hafizvj@hotmail.com" method="POST"  class="uk-form-stacked">
+                
+                <div class="uk-grid uk-grid-small uk-child-width-1-2@s">
+                  <div>
+                    <div class="uk-margin">
+                      <label for="f_name" class="uk-form-label">Name*</label>
+                      <div class="uk-form-controls uk-inline uk-width-1-1">
+                        <span class="uk-form-icon" data-uk-icon="icon: user"></span>
+                        <input class="yb-input uk-input  uk-border-rounded" type="text" name="f_name" id="f_name" placeholder=" Your name here . . ." />
+                      </div>
+                      <small class="uk-text-danger err-msg" id="f_name_error"></small>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-margin">
+                      <label for="f_company" class="uk-form-label">Company</label>
+                      <div class="uk-form-controls uk-inline uk-width-1-1">
+                        <span class="uk-form-icon" data-uk-icon="icon: thumbnails"></span>
+                        <input class="yb-input uk-input uk-border-rounded" type="text" name="f_company" id="f_company" placeholder=" Your company here . . ." />
+                      </div>
+                      <small class="uk-text-danger err-msg" id="f_company_error"></small>
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="uk-grid uk-grid-small uk-child-width-1-2@s">
                   <div>
                     <div class="uk-margin">
                       <label for="f_email" class="uk-form-label">Email*</label>
                       <div class="uk-form-controls uk-inline uk-width-1-1">
-                        <span class="uk-form-icon" data-uk-icon="icon: user"></span>
+                        <span class="uk-form-icon" data-uk-icon="icon: mail"></span>
                         <input class="yb-input uk-input  uk-border-rounded" type="email" name="f_email" id="f_email" placeholder=" Your email here . . ." />
                       </div>
                       <small class="uk-text-danger err-msg" id="f_email_error"></small>
@@ -2346,7 +2371,7 @@ My hours are spent as a UI/UX designer but in my spare time, I like to go Joggin
                     </div>
                   </div>
                 </div>
-                <div class="uk-margin">
+                <!--<div class="uk-margin">
                   <label class="uk-form-label">Subject*</label>
                   <div class="uk-form-controls uk-grid-small uk-child-width-auto uk-grid">
                     <label><input class="uk-radio" type="radio" name="f_subject" value="General" checked />
@@ -2355,7 +2380,7 @@ My hours are spent as a UI/UX designer but in my spare time, I like to go Joggin
                     <label><input class="uk-radio" type="radio" name="f_subject" value="Hire Me" /> Hire
                       Me</label>
                   </div>
-                </div>
+                </div>-->
                 <div class="uk-margin ">
                   <label for="f_message" class="uk-form-label">Message*</label>
                   <div class="uk-form-controls">
@@ -2363,6 +2388,9 @@ My hours are spent as a UI/UX designer but in my spare time, I like to go Joggin
                   </div>
                   <small class="uk-text-danger err-msg" id="f_message_error"></small>
                 </div>
+                <input type="hidden" name="_next" value="https://hafizvj.tech/thanks.html">
+
+
                 <div class="uk-margin-top">
                   <button class="uk-button uk-button-primary uk-button-large  yb-btn" type="submit" id="btn-contact-form" data-textreset="Send Now">
                     <span class="uk-margin-small-right btn-text-wrap">Send Now</span>
@@ -2431,7 +2459,7 @@ My hours are spent as a UI/UX designer but in my spare time, I like to go Joggin
   <!-- js -->
   <script src="src/app/js/plugins.min.js"></script>
   <script src="src/app/js/app.js"></script>
-  <script>
+  <!--<script>
     $("#submit-form").submit((e)=>{
         e.preventDefault()
         $.ajax({
@@ -2440,8 +2468,8 @@ My hours are spent as a UI/UX designer but in my spare time, I like to go Joggin
             method:"post",
             success:function (response){
                 alert("Form submitted successfully")
-                window.location.reload()
-                //window.location.href="https://google.com"
+                //window.location.reload()
+                window.location.href="https://google.com"
             },
             error:function (err){
                 alert("Something Error")
@@ -2449,7 +2477,7 @@ My hours are spent as a UI/UX designer but in my spare time, I like to go Joggin
             }
         })
     })
-</script>
+</script>-->
 </body>
 
 </html>
